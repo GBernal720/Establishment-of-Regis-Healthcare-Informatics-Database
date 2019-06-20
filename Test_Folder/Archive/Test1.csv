@@ -1,0 +1,208 @@
+Type,label,Data_type,length,range,decript
+SURVEY,NCHS SURVEY NAME,Char,20,-,-
+PUBLICID,NHIS PUBLIC USE ID,Char,14,ID,-
+SEQN,NHANES SAMPLE SEQUENCE NUMBER (PUBLIC ID),Num,8,ID,-
+RESNUM,NNHS RESIDENT ID NUMBER (PUBLIC),Num,8,ID,-
+PATNUM,Patient/Discharge Record (Case) Number in public-use file,Num,8,ID,-
+FILE_YEAR4,Beneficiary Enrollment Reference Year (YYYY),Num,4,1999-2013,-
+BENE_ENROLLMT_REF_YR,Beneficiary Enrollment Reference Year,Num,4,1999-2013,-
+COVSTART,Medicare Coverage Start Date,Num,4,-,-
+CRNT_BIC_CD,Beneficiary Identification Code,Char,2,-,-
+STATE_CODE,State Code,Char,2,-,-
+BENE_COUNTY_CD,County Code,Char,3,-,-
+BENE_ZIP_CD,Zip Code of Residence,Char,9,-,-
+BENE_AGE_AT_END_REF_YR,Age at End of Reference Year,Num,3,-,-
+BENE_BIRTH_DT,Date of Birth,Num,4,-,-
+BENE_VALID_DEATH_DT_SW,Valid Date of Death Switch,Char,1,-,Missing Value
+BENE_VALID_DEATH_DT_SW,Valid Date of Death Switch,Char,1,V,Valid death date
+BENE_DEATH_DT,Date of Death,Num,4,-,-
+NDI_DEATH_DT,NDI Date of Death,Num,4,-,-
+BENE_SEX_IDENT_CD,Sex,Char,1,1,MALE
+BENE_SEX_IDENT_CD,Sex,Char,1,2,FEMALE
+BENE_RACE_CD,Beneficiary Race Code,Char,1,0,UNKNOWN
+BENE_RACE_CD,Beneficiary Race Code,Char,1,1,WHITE
+BENE_RACE_CD,Beneficiary Race Code,Char,1,2,BLACK
+BENE_RACE_CD,Beneficiary Race Code,Char,1,3,OTHER
+BENE_RACE_CD,Beneficiary Race Code,Char,1,4,ASIAN/PACIFIC ISLANDER
+BENE_RACE_CD,Beneficiary Race Code,Char,1,5,HISPANIC
+BENE_RACE_CD,Beneficiary Race Code,Char,1,6,NORTH AMERICAN NATIVE
+RTI_RACE_CD,Research Triangle Institute (RTI) Race Code,Char,1,0,UNKNOWN
+RTI_RACE_CD,Research Triangle Institute (RTI) Race Code,Char,1,1,WHITE
+RTI_RACE_CD,Research Triangle Institute (RTI) Race Code,Char,1,2,BLACK
+RTI_RACE_CD,Research Triangle Institute (RTI) Race Code,Char,1,3,OTHER
+RTI_RACE_CD,Research Triangle Institute (RTI) Race Code,Char,1,4,ASIAN/PACIFIC ISLANDER
+RTI_RACE_CD,Research Triangle Institute (RTI) Race Code,Char,1,5,HISPANIC
+RTI_RACE_CD,Research Triangle Institute (RTI) Race Code,Char,1,6,NORTH AMERICAN NATIVE
+BENE_ENTLMT_RSN_ORIG,Original Reason for Entitlement Code,Char,1,0,Old Age and Survivors Insurance (OASI)
+BENE_ENTLMT_RSN_ORIG,Original Reason for Entitlement Code,Char,1,1,Disability Insurance Benefits (DIB)
+BENE_ENTLMT_RSN_ORIG,Original Reason for Entitlement Code,Char,1,2,End-stage Renal Disease (ESRD)
+BENE_ENTLMT_RSN_ORIG,Original Reason for Entitlement Code,Char,1,3,Both DIB and ESRD
+BENE_ENTLMT_RSN_CURR,Current Reason for Entitlement Code,Char,1,0,Old Age and Survivors Insurance (OASI)
+BENE_ENTLMT_RSN_CURR,Current Reason for Entitlement Code,Char,1,1,Disability Insurance Benefits (DIB)
+BENE_ENTLMT_RSN_CURR,Current Reason for Entitlement Code,Char,1,2,End-stage Renal Disease (ESRD)
+BENE_ENTLMT_RSN_CURR,Current Reason for Entitlement Code,Char,1,3,Both DIB and ESRD
+BENE_ESRD_IND,ESRD Indicator,Char,1,0,The beneficiary does not have ESRD
+BENE_ESRD_IND,ESRD Indicator,Char,1,Y,The beneficiary has ESRD
+BENE_MDCR_STATUS_CD,Medicare Status Code,Char,2,10,Aged without ESRD
+BENE_MDCR_STATUS_CD,Medicare Status Code,Char,2,11,Aged with ESRD
+BENE_MDCR_STATUS_CD,Medicare Status Code,Char,2,20,Disabled without ESRD
+BENE_MDCR_STATUS_CD,Medicare Status Code,Char,2,21,Disabled with ESRD
+BENE_MDCR_STATUS_CD,Medicare Status Code,Char,2,31,ESRD only
+BENE_PTA_TRMNTN_CD,Part A Termination Code,Char,1,0,Not terminated
+BENE_PTA_TRMNTN_CD,Part A Termination Code,Char,1,1,Dead
+BENE_PTA_TRMNTN_CD,Part A Termination Code,Char,1,2,Non-payment of premium
+BENE_PTA_TRMNTN_CD,Part A Termination Code,Char,1,3,Voluntary withdrawl
+BENE_PTA_TRMNTN_CD,Part A Termination Code,Char,1,9,Other termination
+BENE_PTB_TRMNTN_CD,Part B Termination Code,Char,1,0,Not terminated
+BENE_PTB_TRMNTN_CD,Part B Termination Code,Char,1,1,Dead
+BENE_PTB_TRMNTN_CD,Part B Termination Code,Char,1,2,Non-payment of premium
+BENE_PTB_TRMNTN_CD,Part B Termination Code,Char,1,3,Voluntary withdrawl
+BENE_PTB_TRMNTN_CD,Part B Termination Code,Char,1,9,Other termination
+BENE_HI_CVRAGE_TOT_MONS,HI Coverage Count,Num,3,0-12,-
+BENE_SMI_CVRAGE_TOT_MONS,SMI Coverage Count,Num,3,0-12,-
+BENE_STATE_BUYIN_TOT_MONS,State Buy-In Coverage Count,Num,3,0-12,-
+BENE_HMO_CVRAGE_TOT_MONS,HMO Coverage Count,Num,3,0-12,-
+BENE_MDCR_ENTLMT_BUYIN_IND_01,Medicare Entitlement/Buy-In Indicator I,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_01,Medicare Entitlement/Buy-In Indicator I,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_01,Medicare Entitlement/Buy-In Indicator I,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_01,Medicare Entitlement/Buy-In Indicator I,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_01,Medicare Entitlement/Buy-In Indicator I,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_01,Medicare Entitlement/Buy-In Indicator I,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_01,Medicare Entitlement/Buy-In Indicator I,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_02,Medicare Entitlement/Buy-In Indicator II,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_02,Medicare Entitlement/Buy-In Indicator II,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_02,Medicare Entitlement/Buy-In Indicator II,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_02,Medicare Entitlement/Buy-In Indicator II,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_02,Medicare Entitlement/Buy-In Indicator II,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_02,Medicare Entitlement/Buy-In Indicator II,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_02,Medicare Entitlement/Buy-In Indicator II,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_03,Medicare Entitlement/Buy-In Indicator III,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_03,Medicare Entitlement/Buy-In Indicator III,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_03,Medicare Entitlement/Buy-In Indicator III,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_03,Medicare Entitlement/Buy-In Indicator III,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_03,Medicare Entitlement/Buy-In Indicator III,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_03,Medicare Entitlement/Buy-In Indicator III,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_03,Medicare Entitlement/Buy-In Indicator III,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_04,Medicare Entitlement/Buy-In Indicator IV,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_04,Medicare Entitlement/Buy-In Indicator IV,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_04,Medicare Entitlement/Buy-In Indicator IV,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_04,Medicare Entitlement/Buy-In Indicator IV,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_04,Medicare Entitlement/Buy-In Indicator IV,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_04,Medicare Entitlement/Buy-In Indicator IV,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_04,Medicare Entitlement/Buy-In Indicator IV,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_05,Medicare Entitlement/Buy-In Indicator V,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_05,Medicare Entitlement/Buy-In Indicator V,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_05,Medicare Entitlement/Buy-In Indicator V,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_05,Medicare Entitlement/Buy-In Indicator V,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_05,Medicare Entitlement/Buy-In Indicator V,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_05,Medicare Entitlement/Buy-In Indicator V,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_05,Medicare Entitlement/Buy-In Indicator V,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_06,Medicare Entitlement/Buy-In Indicator VI,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_06,Medicare Entitlement/Buy-In Indicator VI,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_06,Medicare Entitlement/Buy-In Indicator VI,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_06,Medicare Entitlement/Buy-In Indicator VI,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_06,Medicare Entitlement/Buy-In Indicator VI,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_06,Medicare Entitlement/Buy-In Indicator VI,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_06,Medicare Entitlement/Buy-In Indicator VI,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_07,Medicare Entitlement/Buy-In Indicator VII,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_07,Medicare Entitlement/Buy-In Indicator VII,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_07,Medicare Entitlement/Buy-In Indicator VII,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_07,Medicare Entitlement/Buy-In Indicator VII,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_07,Medicare Entitlement/Buy-In Indicator VII,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_07,Medicare Entitlement/Buy-In Indicator VII,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_07,Medicare Entitlement/Buy-In Indicator VII,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_08,Medicare Entitlement/Buy-In Indicator VIII,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_08,Medicare Entitlement/Buy-In Indicator VIII,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_08,Medicare Entitlement/Buy-In Indicator VIII,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_08,Medicare Entitlement/Buy-In Indicator VIII,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_08,Medicare Entitlement/Buy-In Indicator VIII,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_08,Medicare Entitlement/Buy-In Indicator VIII,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_08,Medicare Entitlement/Buy-In Indicator VIII,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_09,Medicare Entitlement/Buy-In Indicator IX,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_09,Medicare Entitlement/Buy-In Indicator IX,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_09,Medicare Entitlement/Buy-In Indicator IX,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_09,Medicare Entitlement/Buy-In Indicator IX,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_09,Medicare Entitlement/Buy-In Indicator IX,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_09,Medicare Entitlement/Buy-In Indicator IX,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_09,Medicare Entitlement/Buy-In Indicator IX,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_10,Medicare Entitlement/Buy-In Indicator X,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_10,Medicare Entitlement/Buy-In Indicator X,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_10,Medicare Entitlement/Buy-In Indicator X,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_10,Medicare Entitlement/Buy-In Indicator X,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_10,Medicare Entitlement/Buy-In Indicator X,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_10,Medicare Entitlement/Buy-In Indicator X,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_10,Medicare Entitlement/Buy-In Indicator X,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_11,Medicare Entitlement/Buy-In Indicator XI,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_11,Medicare Entitlement/Buy-In Indicator XI,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_11,Medicare Entitlement/Buy-In Indicator XI,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_11,Medicare Entitlement/Buy-In Indicator XI,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_11,Medicare Entitlement/Buy-In Indicator XI,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_11,Medicare Entitlement/Buy-In Indicator XI,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_11,Medicare Entitlement/Buy-In Indicator XI,Char,1,C,Part A and Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_12,Medicare Entitlement/Buy-In Indicator XII,Char,1,0,Not entitled
+BENE_MDCR_ENTLMT_BUYIN_IND_12,Medicare Entitlement/Buy-In Indicator XII,Char,1,1,Part A only
+BENE_MDCR_ENTLMT_BUYIN_IND_12,Medicare Entitlement/Buy-In Indicator XII,Char,1,2,Part B only
+BENE_MDCR_ENTLMT_BUYIN_IND_12,Medicare Entitlement/Buy-In Indicator XII,Char,1,3,Part A and Part B
+BENE_MDCR_ENTLMT_BUYIN_IND_12,Medicare Entitlement/Buy-In Indicator XII,Char,1,A,Part A state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_12,Medicare Entitlement/Buy-In Indicator XII,Char,1,B,Part B state buy-in
+BENE_MDCR_ENTLMT_BUYIN_IND_12,Medicare Entitlement/Buy-In Indicator XII,Char,1,C,Part A and Part B state buy-in
+BENE_HMO_IND_01,HMO Indicator I,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_01,HMO Indicator I,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_01,HMO Indicator I,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_01,HMO Indicator I,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_01,HMO Indicator I,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_02,HMO Indicator II,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_02,HMO Indicator II,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_02,HMO Indicator II,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_02,HMO Indicator II,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_02,HMO Indicator II,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_03,HMO Indicator III,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_03,HMO Indicator III,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_03,HMO Indicator III,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_03,HMO Indicator III,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_03,HMO Indicator III,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_04,HMO Indicator IV,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_04,HMO Indicator IV,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_04,HMO Indicator IV,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_04,HMO Indicator IV,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_04,HMO Indicator IV,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_05,HMO Indicator V,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_05,HMO Indicator V,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_05,HMO Indicator V,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_05,HMO Indicator V,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_05,HMO Indicator V,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_06,HMO Indicator VI,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_06,HMO Indicator VI,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_06,HMO Indicator VI,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_06,HMO Indicator VI,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_06,HMO Indicator VI,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_07,HMO Indicator VII,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_07,HMO Indicator VII,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_07,HMO Indicator VII,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_07,HMO Indicator VII,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_07,HMO Indicator VII,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_08,HMO Indicator VIII,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_08,HMO Indicator VIII,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_08,HMO Indicator VIII,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_08,HMO Indicator VIII,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_08,HMO Indicator VIII,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_09,HMO Indicator IX,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_09,HMO Indicator IX,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_09,HMO Indicator IX,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_09,HMO Indicator IX,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_09,HMO Indicator IX,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_10,HMO Indicator X,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_10,HMO Indicator X,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_10,HMO Indicator X,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_10,HMO Indicator X,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_10,HMO Indicator X,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_11,HMO Indicator XI,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_11,HMO Indicator XI,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_11,HMO Indicator XI,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_11,HMO Indicator XI,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_11,HMO Indicator XI,Char,1,C,"Lock-in, GHO to process all provider claims"
+BENE_HMO_IND_12,HMO Indicator XII,Char,1,0,Not a member of an HMO
+BENE_HMO_IND_12,HMO Indicator XII,Char,1,1,"Non-lock-in, CMS to process provider claims"
+BENE_HMO_IND_12,HMO Indicator XII,Char,1,2,"Non-lock-in, GHO to process in plan Part A and in area Part B claims"
+BENE_HMO_IND_12,HMO Indicator XII,Char,1,4,Fee-for-service participant in case or disease management demonstration project
+BENE_HMO_IND_12,HMO Indicator XII,Char,1,C,"Lock-in, GHO to process all provider claims"
