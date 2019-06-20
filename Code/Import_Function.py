@@ -56,14 +56,15 @@ def run_test(fullpath,name):
     statement = statement[:-1]+');'
 
 
-
-    connection = psycopg2.connect(user = User, password = Password, host = Host, port = Port, database = Database)
-    cursor = connection.cursor()
-    cursor.execute('Drop table '+name)
-    connection.commit()
-    print("Table dropped PostgreSQL ")
-    cursor.close()
-    connection.close()
+    #Commented code is was used for testing purposes to drop table and recreate
+    
+    #connection = psycopg2.connect(user = User, password = Password, host = Host, port = Port, database = Database)
+    #cursor = connection.cursor()
+    #cursor.execute('Drop table '+name)
+    #connection.commit()
+    #print("Table dropped PostgreSQL ")
+    #cursor.close()
+    #connection.close()
 
     connection = psycopg2.connect(user = User, password = Password, host = Host, port = Port, database = Database)
     cursor = connection.cursor()
