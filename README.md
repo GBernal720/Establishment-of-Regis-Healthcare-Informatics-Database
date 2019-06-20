@@ -1,1 +1,1 @@
-# Establishment of Regis Healthcare Informatics Database Data Science Project - Gilbert Anthony Bernal
+# Gilbert Anthony Bernal MSDS 692 Data Science Project
