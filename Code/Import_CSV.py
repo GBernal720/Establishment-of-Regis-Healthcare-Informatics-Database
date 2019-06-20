@@ -1,8 +1,8 @@
 import os
 import shutil
 from Import_Function import  *
-path = "C:\Users\eltac\Desktop\Regis_Homework\MSDS692\Test_Data"
-Archive="C:\Users\eltac\Desktop\Regis_Homework\MSDS692\Archive"
+path = "C:\Users\eltac\Desktop\Regis_Homework\Test_Folder\Test_Data"
+Archive="C:\Users\eltac\Desktop\Regis_Homework\Test_Folder\Archive"
 def files(path):
     for file in os.listdir(path):
         if os.path.isfile(os.path.join(path, file)):
