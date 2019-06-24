@@ -35,3 +35,9 @@ This library offers a number of high level operations for manipulating files. It
 Creating the database was the first step that had to be completed for the project. The reason is because a database was needed in order to test the CSV table creation and upload methods. Since no money was provided for this project open source database management systems were examined. After examining different open source databases, the one chosen was PostgreSQL. The reason why this one was chosen over other open source databases was because it uses the standard SQL language and has a command called COPY that can be used to upload CSV files directly into tables. Making sure that the database used the standard SQL language was important because many users know this language already. This makes it easy for users to work with the data that is being uploaded and understand the code used in python. The ability to upload CSV is important since these are the types of files used by many health care organizations. 
 
 **Step 1: Download PostgreSQL**
+![](Images/Postgre_Download.PNG)
+
+**Step 2: Follow Install Directions and Start Database**
+![](Images/Postgre_Server.PNG)
+
+# Part 2: Create Python Code
