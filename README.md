@@ -53,5 +53,6 @@ Three Python codes were created for this project. These codes were Info.py, Impo
 ![](Images/Import_Function2.PNG)
 
 **Import_CSV.py:** This code is used to obtain the paths of the directory where the CSV files are stored and the archive directory that we want our files to move to after running the Import_function.py. After obtaining the paths the code then creates a function that will go through each of the files within a certain directory. After this a loop is used to go through all of the files in the directory and run the function created in the Import_Function.py to create the table and upload the data for every CSV file in the directory. After that the file is then moved to the archive folder to make sure that the table is not created again. 
+
 ![](Images/Import_CSV.PNG)
 
