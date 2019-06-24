@@ -41,3 +41,17 @@ Creating the database was the first step that had to be completed for the projec
 ![](Images/Postgre_Server.PNG)
 
 # Part 2: Create Python Code
+Three Python codes were created for this project. These codes were Info.py, Import_Function.py and Import_CSV.py.
+
+**Info.py:** This code is used to store login credentials of the PostgreSQL admin account as variables for any Python code using PostgreSQL to use. This user must be an admin so that it can use any of the database table commands with no issue.
+
+![](Images/Info.PNG)
+**Import_Function.py:** This code stores a function that is used to take any CSV file and create a table based on the headers and values stored in the CSV. After the CREATE TABLE statement is created the code then uses the variables in the Info.py file to connect to the PostgreSQL database and run the CREATE TABLE statement in order to create the unique table for the CSV. After that another connection is made and the COPY command is used to upload the data from the CSV used to create the table into it. 
+
+![](Images/Import_Function1.PNG)
+
+![](Images/Import_Function2.PNG)
+
+**Import_CSV.py:** This code is used to obtain the paths of the directory where the CSV files are stored and the archive directory that we want our files to move to after running the Import_function.py. After obtaining the paths the code then creates a function that will go through each of the files within a certain directory. After this a loop is used to go through all of the files in the directory and run the function created in the Import_Function.py to create the table and upload the data for every CSV file in the directory. After that the file is then moved to the archive folder to make sure that the table is not created again. 
+![](Images/Import_CSV.PNG)
+
