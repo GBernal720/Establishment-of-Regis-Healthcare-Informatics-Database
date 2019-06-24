@@ -46,6 +46,7 @@ Three Python codes were created for this project. These codes were Info.py, Impo
 **Info.py:** This code is used to store login credentials of the PostgreSQL admin account as variables for any Python code using PostgreSQL to use. This user must be an admin so that it can use any of the database table commands with no issue.
 
 ![](Images/Info.PNG)
+
 **Import_Function.py:** This code stores a function that is used to take any CSV file and create a table based on the headers and values stored in the CSV. After the CREATE TABLE statement is created the code then uses the variables in the Info.py file to connect to the PostgreSQL database and run the CREATE TABLE statement in order to create the unique table for the CSV. After that another connection is made and the COPY command is used to upload the data from the CSV used to create the table into it. 
 
 ![](Images/Import_Function1.PNG)
