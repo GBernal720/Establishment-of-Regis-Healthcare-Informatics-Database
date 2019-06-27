@@ -73,5 +73,28 @@ The paper “Effects of rainfall on Culex mosquito population dynamics” by Luc
 
 For this project data was obtained from two different sources. The first source was from HealthData.gov and data collected was on confirmed West Nile virus cases in different cities within California. The next source was from Los Angeles Almanac and the data collected form this source was on the total rainfall in Los Angeles recorded from the USC downtown campus. Once these sources were collected the CSV files were checked to make sure no issues would occur when the python script mention in part two was ran for to create the files needed for the analysis. The issues identified within the CSV files were in the headers. The headers had spaces in them which can cause a common issue when creating a table. To correct this the columns were renamed to make sure this issue would no occur. After that the files were renamed to use my username (gbernal) and then the name of the file. This way they would be easy to identify and remember. Once this was done the python files were ran to create the table and upload the data to the unique table created. After this was done a Tableau report was created to create the linear regression model, calculate the correlation and R squared values, and visually see if there was a correlation between the two. After doing this the results showed that there was no correlation between the amount of rainfall and confirmed cases of West Nile virus in Los Angeles California. 
 
-** Step 1: Obtain Data **
+**Step 1: Obtain Data**
 
+West Nile Virus Source
+
+![](Images/WNV_Site.PNG)
+
+![](Images/WNV_Excel.PNG)
+
+LA Rainfall Source
+
+![](Images/LA_Rain.PNG)
+
+![](Images/LA_Rain_Excel.PNG)
+
+**Step 2: Clean Data and Rename files**
+
+Two columns were seen to possibly cause an issue with the WNV excel data. Two of the columns had a space in the header. The Week Report column was removed since we are going to be doing this analysis by year and the Positive Cases columns was replaced with Postitive_Cases. 
+
+![](Images/WNV_Excel_Clean.PNG)
+
+![](Images/rename.PNG)
+
+**Step 3: Run Python Import_CSV.py code**
+
+![](Images/Run_Code.PNG)
