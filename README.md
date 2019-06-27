@@ -98,3 +98,17 @@ Two columns were seen to possibly cause an issue with the WNV excel data. Two of
 **Step 3: Run Python Import_CSV.py code**
 
 ![](Images/Run_Code.PNG)
+
+**Step 4: Create Query**
+
+![](Images/Query.PNG)
+
+**Step 5: Import Data into Tableau**
+
+![](Images/Tableau_Connection.PNG)
+
+![](Images/Tableau_Query.PNG)
+
+**Step 6: Create Report**
+
+![](Images/WNV_Report.PNG)
