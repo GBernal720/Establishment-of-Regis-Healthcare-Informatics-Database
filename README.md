@@ -8,7 +8,7 @@ After talking to Dr. Judit Olah about the database needed for the program there 
 
 ## Tools
 
-### PostGres
+### PostgreSQL
 PostgreSQL is a open source object-relational database system that uses the standard SQL language and extends the language with various features. The reasons why Postgres was chosen for this project over other database management systems was first the fact that Postgre was free and opensource. This means that there was absolutely no money needed in order to install and start using the database management system. The second reason was because Postgres works with a variety of data types. Examples of data types that Postgre works with are JSON, CSV, and XML. Making sure that the database chosen works well with various formats is important because the data the Health Informatics school will be using can vary based on the health organization they are getting their data from. The next reason is because Postgre works with various coding languages such as Python. Python has various libraries that can be used with PostgreSQL or manipulate data if needed before uploading the CSV data to the database. The last reason why PostgreSQL was chosen over other database is because it has a simple built in method COPY that allows users to upload CSV, JSON, and XML data files into its tables quickly.
 
 ### Python
