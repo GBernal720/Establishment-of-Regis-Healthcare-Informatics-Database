@@ -148,3 +148,5 @@ Welcome to Python.org. (n.d.). Retrieved June 26, 2019, from https://www.python.
 West Nile virus. (2018, December 10). Retrieved June 26, 2019, from https://www.cdc.gov/westnile/index.html
 
 West Nile Virus Cases, 2006-present. (2019, June 25). Retrieved June 26, 2019, from https://healthdata.gov/dataset/west-nile-virus-cases-2006-present
+
+Youtube Presentation: https://www.youtube.com/watch?v=N-74fgEW76M&feature=youtu.be
